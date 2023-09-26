@@ -21,8 +21,8 @@ function Project() {
       <h1 className='uppercase absolute top-24  tracking-[20px] text-gray-500 text-2xl'>Projects</h1>
 
       <div className='relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 md:mt-28 '>
-        {Projects.map((project) => (
-          <div className=' w-screen flex flex-shrink-0 snap-center flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen '>  
+        {Projects.map((project,i) => (
+          <div className=' w-screen flex flex-shrink-0 snap-center flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen ' key={i}>  
             <a href={project.url}><motion.img
               initial={{
                 y: -300,
